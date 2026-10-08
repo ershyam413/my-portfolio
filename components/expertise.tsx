@@ -1,14 +1,17 @@
 import { Reveal } from "@/components/reveal";
 import { Section } from "@/components/section";
-import { skills } from "@/lib/content";
+import { skills, stackNote } from "@/lib/content";
 
 export function Expertise() {
   return (
     <Section
       id="expertise"
-      eyebrow="03 / Expertise"
-      title="What I actually use in production"
+      eyebrow="04 / Stack"
+      title="Languages and stacks I deliver"
     >
+      <p className="mb-10 max-w-2xl text-[15px] leading-relaxed text-[var(--muted)]">
+        {stackNote}
+      </p>
       <div className="grid gap-px overflow-hidden rounded-lg border border-[var(--line)] bg-[var(--line)] sm:grid-cols-2 lg:grid-cols-3">
         {skills.map((group, index) => (
           <Reveal key={group.group} className="h-full" delay={index * 60}>

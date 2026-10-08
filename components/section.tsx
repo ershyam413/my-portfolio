@@ -18,10 +18,10 @@ export function Section({
     >
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal className="mb-12 sm:mb-16">
-          <p className="font-mono text-[11px] tracking-[0.2em] text-[var(--faint)] uppercase">
+          <p className="eyebrow font-mono text-[11px] tracking-[0.2em] uppercase">
             {eyebrow}
           </p>
-          <h2 className="mt-2 font-serif text-3xl tracking-tight text-[var(--fg)] sm:text-4xl">
+          <h2 className="section-title mt-2 font-serif text-3xl tracking-tight text-[var(--fg)] sm:text-4xl">
             {title}
           </h2>
         </Reveal>

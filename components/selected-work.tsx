@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { InteractiveCard } from "@/components/interactive-card";
 import { Reveal } from "@/components/reveal";
 import { LiveLinks } from "@/components/live-links";
 import { Section } from "@/components/section";
@@ -6,7 +7,7 @@ import { projects, shippedSites } from "@/lib/content";
 
 export function SelectedWork() {
   return (
-    <Section id="work" eyebrow="01 / Selected work" title="Case studies">
+    <Section id="work" eyebrow="02 / Selected work" title="Case studies">
       <ul className="divide-y divide-[var(--line)] border-y border-[var(--line)]">
         {projects.map((project, index) => (
           <li key={project.slug}>
@@ -57,7 +58,8 @@ export function SelectedWork() {
           {shippedSites.map((item, index) => (
             <li key={item.slug}>
               <Reveal delay={index * 70} className="h-full">
-                <article className="flex h-full flex-col rounded-lg border border-[var(--line)] p-5 transition-colors hover:border-[var(--line-strong)] hover:bg-[var(--bg-elevated)]">
+                <InteractiveCard className="h-full">
+                <article className="surface flex h-full flex-col rounded-lg border border-[var(--line)] bg-[var(--bg-elevated)]/40 p-5 transition-colors hover:border-[color-mix(in_srgb,var(--accent)_45%,transparent)] hover:bg-[var(--bg-elevated)]">
                   <div className="flex items-center justify-between gap-3">
                     <span className="font-mono text-[10px] tracking-[0.16em] text-[var(--faint)] uppercase">
                       {item.origin === "Independent"
@@ -79,6 +81,7 @@ export function SelectedWork() {
                     Case study →
                   </Link>
                 </article>
+                </InteractiveCard>
               </Reveal>
             </li>
           ))}

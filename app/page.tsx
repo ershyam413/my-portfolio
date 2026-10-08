@@ -5,11 +5,13 @@ import { Expertise } from "@/components/expertise";
 import { Hero } from "@/components/hero";
 import { Learning } from "@/components/learning";
 import { SelectedWork } from "@/components/selected-work";
+import { Services } from "@/components/services";
 
 export default function Home() {
   return (
     <main id="content">
       <Hero />
+      <Services />
       <SelectedWork />
       <Experience />
       <Expertise />

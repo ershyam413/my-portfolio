@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Shyam Mahato — Senior Full Stack Engineer";
+export const alt = "Shyam Mahato — Senior Software Developer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -30,7 +30,7 @@ export default function OpenGraphImage() {
             fontFamily: "ui-monospace, monospace",
           }}
         >
-          Software Engineer · targeting Senior Full Stack
+          Senior Software Developer · Full-Stack
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 88, lineHeight: 0.95 }}>Shyam Mahato</div>
@@ -44,8 +44,8 @@ export default function OpenGraphImage() {
               fontFamily: "system-ui, sans-serif",
             }}
           >
-            High-traffic media and enterprise platforms. News18 · CNBC TV18 · 4M+
-            monthly impressions.
+            Production web apps, portals, and booking systems. News18 · 4M+
+            monthly impressions. Available for freelance.
           </div>
         </div>
         <div
@@ -57,8 +57,8 @@ export default function OpenGraphImage() {
             fontFamily: "ui-monospace, monospace",
           }}
         >
-          <span>5+ years frontend</span>
-          <span>Next.js · TypeScript · Spring Boot</span>
+          <span>5+ years full-stack</span>
+          <span>Next.js · Node · PostgreSQL</span>
         </div>
       </div>
     ),

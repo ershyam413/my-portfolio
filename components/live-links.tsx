@@ -24,7 +24,7 @@ export function LiveLinks({
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[12px] text-[var(--fg)] underline-offset-4 hover:underline"
+            className="font-mono text-[12px] text-[var(--accent)] underline-offset-4 hover:underline"
           >
             {link.label} ↗
           </a>

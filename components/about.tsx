@@ -4,45 +4,40 @@ import { site } from "@/lib/content";
 
 export function About() {
   return (
-    <Section id="about" eyebrow="05 / About" title="How I work">
+    <Section id="about" eyebrow="06 / About" title="How I work">
       <Reveal>
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
           <div className="max-w-2xl space-y-5 text-[15px] leading-relaxed text-[var(--muted)]">
             <p>
               I grew up around Kathmandu, completed a B.Tech and an M.Tech in
               Computer Science & Engineering in Punjab (M.Tech CGPA 8.63), and
-              have spent over 5 years in frontend development at Altruist
-              shipping products that real people and crawlers both have to use.
+              have spent 5+ years as a software developer shipping products
+              that real users, operators, and crawlers have to live with.
             </p>
             <p>
-              Most of my work is frontend for real products, not marketing
-              pages. I have designed and shipped several portals — media, a
-              Nepal news CMS, fleet logistics, travel booking, trip planning,
-              and workforce tracking.
+              I am a Senior Software Developer and Full-Stack Developer. That
+              means I can own the UI, the API, the schema, and the release —
+              web apps, SaaS, admin panels, booking flows, CRM/ERP-style
+              portals, and public sites. Shipped surfaces include media,
+              logistics, telecom, travel, health-tech, hospitality, and
+              workforce tools.
               That means{" "}
               <span className="text-[var(--fg)]">
-                dashboards, graphs, pie charts, tables, maps, and RBAC-scoped
-                views
+                dashboards, graphs, tables, maps, RBAC, payments, and
+                SEO-critical pages
               </span>
-              , plus the visual system around them. I currently own both the
-              implementation and a large part of the design: layout, dashboard
-              composition, chart treatments, and how an operator should read
-              the screen in three seconds.
+              , plus the visual system around them. Clients get one engineer
+              who can sit in a technical discussion and then actually ship.
             </p>
             <p>
-              Under the hood that is Next.js, React, TypeScript, Redux, and
-              Vite — SSR/SSG and Core Web Vitals on public properties,
-              Next.js backend with Prisma and Supabase when I own the CMS,
-              component-driven UI and microfrontends on admin surfaces. I am
-              looking for a Senior Full Stack seat on a product team where
-              design, APIs, data visualisation, and performance are treated as
-              engineering, not decoration. In parallel I am learning Core Java,
-              Advanced Java, and Spring Boot so I can own backend services the
-              market now expects, plus applied AI courses (LLMs, RAG, product
-              UX).
+              Hands-on production is Next.js, React, TypeScript, Node.js,
+              PostgreSQL, Prisma, and REST. Java, Python, Spring Boot, React
+              Native, Flutter, Android, and iOS ship with me as technical lead
+              plus Dynoserve — so a client is not stuck in one language. I take
+              freelance and contract software projects end to end.
             </p>
           </div>
-          <aside className="h-fit rounded-lg border border-[var(--line)] p-6">
+          <aside className="surface h-fit rounded-lg border border-[var(--line)] bg-[var(--bg-elevated)]/50 p-6">
             <p className="font-mono text-[11px] tracking-[0.18em] text-[var(--faint)] uppercase">
               Currently
             </p>
@@ -54,29 +49,36 @@ export function About() {
               <li className="flex justify-between gap-4 border-b border-[var(--line)] pb-3">
                 <span>Experience</span>
                 <span className="text-right text-[var(--fg)]">
-                  5+ years frontend
+                  5+ years full-stack
                 </span>
               </li>
               <li className="flex justify-between gap-4 border-b border-[var(--line)] pb-3">
                 <span>Role</span>
-                <span className="text-[var(--fg)]">Software Engineer</span>
+                <span className="text-right text-[var(--fg)]">
+                  Senior Software Developer
+                </span>
               </li>
               <li className="flex justify-between gap-4 border-b border-[var(--line)] pb-3">
                 <span>Now</span>
                 <span className="text-right text-[var(--fg)]">
-                  Frontend + portal UI design
+                  Freelance + product delivery
                 </span>
               </li>
               <li className="flex justify-between gap-4 border-b border-[var(--line)] pb-3">
-                <span>Learning</span>
-                <span className="text-right text-[var(--fg)]">
-                  Java, Spring Boot, AI
-                </span>
+                <span>Studio</span>
+                <a
+                  href={site.studio}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-right text-[var(--fg)] hover:underline"
+                >
+                  dynoserve.com ↗
+                </a>
               </li>
               <li className="flex justify-between gap-4">
-                <span>Target</span>
+                <span>Open for</span>
                 <span className="text-right text-[var(--fg)]">
-                  Senior Full Stack
+                  Software projects E2E
                 </span>
               </li>
             </ul>

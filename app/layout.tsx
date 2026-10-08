@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
+import { AmbientOrbs } from "@/components/ambient-orbs";
+import { CursorGlow } from "@/components/cursor-glow";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { ScrollProgress } from "@/components/scroll-progress";
 import { site } from "@/lib/content";
 import { themeInitScript } from "@/lib/theme-script";
 import "./globals.css";
@@ -32,12 +35,19 @@ export const metadata: Metadata = {
   description: site.summary,
   keywords: [
     "Shyam Mahato",
-    "Software Engineer",
-    "Senior Full Stack Engineer",
+    "Senior Software Developer",
+    "Full-Stack Developer",
+    "Freelance software developer",
     "Next.js",
     "React",
     "TypeScript",
-    "Core Web Vitals",
+    "Node.js",
+    "Java",
+    "Python",
+    "React Native",
+    "Flutter",
+    "Android",
+    "iOS",
     "News18",
     "CNBC TV18",
   ],
@@ -80,9 +90,15 @@ const jsonLd = {
     "Next.js",
     "React",
     "TypeScript",
-    "Core Web Vitals",
-    "Microfrontends",
-    "SEO",
+    "Node.js",
+    "PostgreSQL",
+    "Java",
+    "Python",
+    "React Native",
+    "Flutter",
+    "Full-stack web development",
+    "Admin panels",
+    "Technical SEO",
   ],
 };
 
@@ -91,7 +107,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} ${instrument.variable} h-full antialiased dark`}
+      className={`${geistSans.variable} ${geistMono.variable} ${instrument.variable} h-full antialiased light`}
     >
       <body className="page-bg min-h-full flex flex-col font-sans">
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
@@ -102,6 +118,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <a href="#content" className="skip-link">
           Skip to content
         </a>
+        <ScrollProgress />
+        <AmbientOrbs />
+        <CursorGlow />
         <Header />
         {children}
         <Footer />

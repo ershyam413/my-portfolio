@@ -1,6 +1,7 @@
 export const site = {
   name: "Shyam Mahato",
-  role: "Software Engineer",
+  role: "Senior Software Developer",
+  tagline: "Full-Stack Developer · Technical Lead",
   location: "Panchkula, Haryana",
   email: "er.shyam413@gmail.com",
   phone: "+91 84270 45734",
@@ -8,22 +9,25 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/shyam-mahato-2603311b5",
   github: "https://github.com/ershyam413",
   whatsapp: "https://wa.me/918427045734",
-  resumeHref: "/shyam-resume-august.pdf",
-  resumeFileName: "Shyam-Mahato-Resume.pdf",
-  availability: "Open to Senior Full Stack Engineer roles",
+  studio: "https://www.dynoserve.com/",
+  resumeHref:
+    "/Shyam_Mahato_Senior_Software_Developer_Full_Stack_Resume_Final.pdf",
+  resumeFileName: "Shyam-Mahato-Senior-Software-Developer-Full-Stack.pdf",
+  availability: "Available for freelance, contract, and product teams",
+  mailSubject: "Hello Shyam — software project",
   headline:
-    "Over 5 years of frontend development — shipping high-traffic media platforms and operational portals. Targeting Senior Full Stack roles across UI, APIs, and product.",
+    "Senior Software Developer with 5+ years shipping production software — web apps, enterprise portals, dashboards, booking platforms, and business systems. Full-stack across UI, APIs, data, and delivery.",
   briefing:
-    "I have built the complete frontend for multiple production portals: News18 / CNBC TV18 / Storyboard18, JanakpurZone (tridevgurukul.com), Tawseel fleet operations, Bharat Caravans booking, ExploreSathi, JobTracking, Glow TRACE, and the Beta Labs telecom tower-survey portal — plus company sites including CMO Axis, Glow Networks, Teligent, Secova, Altruist World, Dynoserve, and The Altruist India.",
+    "I take software from brief to production: React / Next.js / TypeScript, Node.js, PostgreSQL, Prisma and REST APIs — plus Java, Python, Spring Boot, React Native, Flutter, Android and iOS when the product needs a broader stack. Auth, payments, admin, SEO, and CI/CD included. Shipped work spans News18 / CNBC TV18 / Storyboard18, Tawseel, Bharat Caravans, ExploreSathi, JobTracking, Secova, and telecom / hospitality products across US, UK, UAE, Sweden, and India.",
   summary:
-    "Software engineer with over 5 years of frontend development — shipping SEO-critical products and operational portals. Production work is frontend-strong (Next.js, TypeScript, dashboards) with full-stack delivery on CMS and booking products. Targeting Senior Full Stack Engineer roles.",
+    "Senior Software Developer and Full-Stack Developer with 5+ years building production web applications, enterprise portals, dashboards, booking platforms, and business systems. Hands-on in React, Next.js, TypeScript, Node.js, PostgreSQL, and REST APIs. Java, Python, Spring Boot, React Native, Flutter, Android and iOS through technical leadership and a multidisciplinary delivery team. Available for freelance and contract software projects end to end.",
 } as const;
 
 export const socials = [
   {
     id: "email",
     label: "Email",
-    href: "mailto:er.shyam413@gmail.com?subject=Hello%20Shyam%20—%20frontend%20role",
+    href: "mailto:er.shyam413@gmail.com?subject=Hello%20Shyam%20%E2%80%94%20software%20project",
     external: false,
   },
   {
@@ -53,24 +57,59 @@ export const socials = [
 ] as const;
 
 export const nav = [
+  { href: "/#hire", label: "Hire" },
   { href: "/#work", label: "Work" },
   { href: "/#experience", label: "Experience" },
-  { href: "/#expertise", label: "Expertise" },
-  { href: "/#learning", label: "Learning" },
+  { href: "/#expertise", label: "Stack" },
   { href: "/#about", label: "About" },
   { href: "/#contact", label: "Contact" },
 ] as const;
 
 export const practices = [
-  "Operational portals",
-  "Analytics dashboards",
-  "Graphs & pie charts",
-  "Live maps & tracking",
-  "RBAC & role dashboards",
-  "UI / visual design",
-  "Next.js · React · TypeScript",
-  "News CMS & publishing",
-  "SSR, SEO & Core Web Vitals",
+  "Full-stack web apps",
+  "SaaS · CRM · ERP",
+  "Admin panels & dashboards",
+  "Booking & e-commerce",
+  "REST APIs & payments",
+  "Java · Python · Spring Boot",
+  "React Native · Flutter",
+  "Android & iOS",
+  "End-to-end product delivery",
+] as const;
+
+export const services = [
+  {
+    title: "Web apps & SaaS",
+    body: "Production React / Next.js applications with TypeScript — authenticated product surfaces, not landing-page templates.",
+  },
+  {
+    title: "Admin panels & dashboards",
+    body: "Role-scoped portals: tables, KPIs, graphs, pie charts, and workflows operators can run without a spreadsheet.",
+  },
+  {
+    title: "Booking, e-commerce & payments",
+    body: "Funnels, inventories, and Razorpay with webhook verification — ExploreSathi and Bharat Caravans class of work.",
+  },
+  {
+    title: "Enterprise portals",
+    body: "Logistics, telecom, workforce, and health-tech systems: RBAC, live maps, invoicing, surveys, and CI that actually gates releases.",
+  },
+  {
+    title: "APIs & data",
+    body: "Node.js, Express, REST, PostgreSQL, Prisma, Supabase, MongoDB — schema, auth, and the contract the UI ships against.",
+  },
+  {
+    title: "Public sites & technical SEO",
+    body: "SSR/SSG, Core Web Vitals, semantic HTML, and metadata. Storyboard18 went 100K → 180K organic impressions; News18 Group 2M → 4M.",
+  },
+  {
+    title: "Mobile — Android & iOS",
+    body: "React Native and Flutter apps for both stores, plus native Android and iOS when the product needs them. One technical lead across web and mobile.",
+  },
+  {
+    title: "Java, Python & Spring",
+    body: "Enterprise backends and scripts: Java, Spring Boot, Python APIs and automation — shipped with me as lead plus the Dynoserve delivery team.",
+  },
 ] as const;
 
 export const metrics = [
@@ -92,6 +131,7 @@ export const skills = [
       "Redux",
       "HTML5",
       "CSS3",
+      "Tailwind CSS",
       "Responsive UI",
     ],
   },
@@ -133,10 +173,37 @@ export const skills = [
       "Node.js",
       "Express.js",
       "REST APIs",
+      "Java",
+      "Spring Boot",
+      "Python",
       "Prisma ORM",
       "PostgreSQL",
       "Supabase",
       "MongoDB",
+    ],
+  },
+  {
+    group: "Mobile",
+    items: [
+      "React Native",
+      "Flutter",
+      "Android",
+      "iOS",
+      "Kotlin",
+      "Swift",
+    ],
+  },
+  {
+    group: "Languages we ship",
+    items: [
+      "TypeScript",
+      "JavaScript",
+      "Java",
+      "Python",
+      "Kotlin",
+      "Swift",
+      "SQL",
+      "HTML / CSS",
     ],
   },
   {
@@ -158,16 +225,29 @@ export const skills = [
       "Third-party ad networks",
     ],
   },
+  {
+    group: "Product delivery",
+    items: [
+      "Client-facing technical discussions",
+      "End-to-end ownership",
+      "Technical leadership",
+      "React Native / Flutter / Android / iOS",
+      "Java · Python · Spring Boot delivery",
+    ],
+  },
 ] as const;
+
+export const stackNote =
+  "I personally ship React, Next.js, TypeScript, Node.js, and PostgreSQL in production. Java, Spring Boot, Python, React Native, Flutter, Android, and iOS ship with me as technical lead plus the Dynoserve team — so a freelance brief is not limited to one language.";
 
 export const learning = {
   intro:
-    "Production work stays product-first. I am targeting Senior Full Stack Engineer roles, so I am adding Java / Spring Boot and applied AI — without pretending they are already years of production Java.",
+    "Hands-on production is React, Next.js, Node, and PostgreSQL. Java, Spring Boot, Python, and mobile (React Native, Flutter, Android, iOS) are stacks I take on as technical lead with Dynoserve — I am also deepening Java / Spring and applied AI myself.",
   tracks: [
     {
       title: "Backend — Java & Spring Boot",
       status: "In progress",
-      why: "Market demand for full-stack and backend-capable frontend engineers. Target: REST services, Spring ecosystem, and the ability to own an API the same way I already own a UI.",
+      why: "Many enterprise briefs still specify Spring. I already own Node/REST APIs in production; this track is so I can sit in those stacks without a translation layer.",
       items: [
         {
           name: "Core Java",
@@ -356,7 +436,7 @@ export const projects: Project[] = [
     title: "Bharat Caravans",
     brand: "bharatcaravans.com",
     oneLiner:
-      "Booking funnel on Next.js, LCP cut from ~10s to ~3s, admin split into independently deployable microfrontends.",
+      "Full-stack travel booking platform — 12+ pages, LCP cut ~70%, booking workflows, and a microfrontend admin.",
     sector: "Travel · Microfrontends",
     year: "Altruist",
     stack: [
@@ -371,7 +451,7 @@ export const projects: Project[] = [
     extraLinks: [
       { href: "https://admin.bharatcaravans.com/", label: "admin.bharatcaravans.com" },
     ],
-    role: "Frontend engineer for the consumer booking flow and the federated admin architecture.",
+    role: "Full-stack delivery on the travel booking platform — 12+ user-facing pages, performance, booking workflows, and a microfrontend admin.",
     problem:
       "The booking product needed a fast, multi-page funnel. The admin product needed three teams to ship without blocking on a monolith release train. Unauthorized routes were a launch risk.",
     approach: [
@@ -759,14 +839,14 @@ export const allWork = [...projects, ...shippedSites];
 
 export const experience = {
   company: "Altruist Technologies Pvt. Ltd.",
-  title: "Software Engineer",
+  title: "Senior Software Developer",
   period: "Aug 2021 — Present",
   location: "Haryana, India",
   summary:
-    "Over 5 years of frontend development on high-traffic media, a Nepal news CMS (JanakpurZone), enterprise logistics, travel, telecom tower-survey ops (US / UK / Sweden), and internal workforce products. I have designed and built the frontend for several portals — dashboards with graphs and pie charts, role-scoped views, maps, editorial admin, and the visual system around them. I take a property from layout to 'it ranks, it loads, it is permissioned, and it ships on a pipeline'.",
+    "5+ years building production web applications, enterprise portals, dashboards, booking platforms, and business systems. Hands-on in React, Next.js, TypeScript, Node.js, PostgreSQL, and REST APIs — architecture, performance, SEO, authentication, payments, admin panels, and CI/CD. Client-facing technical discussions and end-to-end product delivery across media, logistics, telecom, travel, health-tech, and workforce products.",
   earlier: {
-    title: "React Developer → Software Engineer",
-    note: "Promoted internally. Same company, expanding scope from UI delivery to architecture, SEO, CI, and full-stack ownership.",
+    title: "React Developer → Software Engineer → Senior Software Developer",
+    note: "Promoted internally. Same company, expanding from UI delivery to architecture, full-stack ownership, and technical lead on product delivery.",
   },
 };
 

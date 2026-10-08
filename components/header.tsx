@@ -10,11 +10,11 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[var(--header-bg)] backdrop-blur-md">
+    <header className="site-header sticky top-0 z-50 border-b border-[var(--line)] bg-[var(--header-bg)] backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
         <Link
           href="/"
-          className="font-mono text-[13px] tracking-[0.14em] text-[var(--fg)]"
+          className="font-mono text-[13px] tracking-[0.14em] text-[var(--accent)]"
           onClick={() => setOpen(false)}
         >
           SM

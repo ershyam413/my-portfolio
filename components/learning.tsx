@@ -6,7 +6,7 @@ export function Learning() {
   return (
     <Section
       id="learning"
-      eyebrow="04 / Learning"
+      eyebrow="05 / Learning"
       title="What I am adding next"
     >
       <p className="mb-10 max-w-2xl text-[15px] leading-relaxed text-[var(--muted)]">
@@ -16,7 +16,7 @@ export function Learning() {
       <div className="grid gap-6 lg:grid-cols-2">
         {learning.tracks.map((track, index) => (
           <Reveal key={track.title} delay={index * 80}>
-            <article className="h-full rounded-lg border border-[var(--line)] p-6 sm:p-7">
+            <article className="surface h-full rounded-lg border border-[var(--line)] bg-[var(--bg-elevated)]/40 p-6 sm:p-7">
               <div className="flex items-center justify-between gap-4">
                 <h3 className="text-lg tracking-tight text-[var(--fg)]">
                   {track.title}

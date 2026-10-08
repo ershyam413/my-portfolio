@@ -4,7 +4,7 @@ type Variant = "primary" | "outline" | "ghost" | "nav";
 
 const variants: Record<Variant, string> = {
   primary:
-    "btn-lift inline-flex h-11 items-center gap-2 rounded-full bg-[var(--fg)] px-5 text-[13px] font-medium text-[var(--bg)]",
+    "btn-lift inline-flex h-11 items-center gap-2 rounded-full bg-[var(--accent)] px-5 text-[13px] font-medium text-[var(--accent-fg)]",
   outline:
     "btn-lift inline-flex h-11 items-center gap-2 rounded-full border border-[var(--line-strong)] px-5 text-[13px] text-[var(--fg)] hover:bg-[var(--fg)]/5",
   ghost:
