@@ -27,6 +27,7 @@ export function MetricValue({ value }: { value: string }) {
       return;
     }
 
+    const { prefix, number, suffix } = data;
     const node = ref.current;
     if (!node) return;
 
@@ -55,7 +56,7 @@ export function MetricValue({ value }: { value: string }) {
             return;
           }
           const eased = 1 - (1 - t) ** 3;
-          setText(`${data.prefix}${Math.round(data.number * eased)}${data.suffix}`);
+          setText(`${prefix}${Math.round(number * eased)}${suffix}`);
           frame = requestAnimationFrame(tick);
         }
 
